@@ -1,0 +1,43 @@
+<div class="site-about">
+	<div class="wrapper">
+
+	<h1 class="title">{{ site.blockTitle3 }}</h1>
+	<p class="description">Um pouco sobre mim.</p>
+
+	<section class="about-content">
+		<p>{{ site.description }}</p>
+
+		<h1 class="title">Minhas skills >></h1>
+	</section>
+	
+	<section class="skills">
+		<ul>
+			<!-- <li>HTML</li> -->
+			<li class="percent clearfix" data-percent="{{ site.html }}">
+				<span class="skillbar-bar skillbar-bar-html">HTML</span>
+				<span class="skill-bar-percent">{{ site.html }}</span>
+			</li>
+		
+			<!-- <li>CSS</li> -->
+			<li class="percent clearfix" data-percent="{{ site.css }}">
+				<span class="skillbar-bar skillbar-bar-css">CSS</span>
+				<span class="skill-bar-percent">{{ site.css }}</span>
+			</li>
+		
+			<!-- <li>JavaScript</li> -->
+			<li class="percent clearfix" data-percent="{{ site.javascript }}">
+				<span class="skillbar-bar skillbar-bar-js">JavaScript</span>
+				<span class="skill-bar-percent">{{ site.javascript }}</span>
+			</li>
+		
+			<!-- <li>Outros</li> -->
+			<li class="percent clearfix" data-percent="{{ site.outros }}">
+				<span class="skillbar-bar skillbar-bar-outros">Outros</span>
+				<span class="skill-bar-percent">{{ site.outros }}</span>
+			</li>
+		
+		</ul>
+	</section>
+	</div>
+
+</div>

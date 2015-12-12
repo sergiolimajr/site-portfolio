@@ -1,0 +1,45 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+nameSite: Sérgio Júnior 
+title: <em class="letter-special">S</em>érgio
+subtitle: <em class="letter-special">J</em>únior
+content-header: Seja bem vindo. Veja alguns dos meus trabalhos ou Leia sobre mim. 
+email: devsergiojr@gmail.com
+description: 
+  Olá! Meu nome é Sérgio Júnior, tenho 22 anos. 
+  Atualmente trabalho como desenvolvedor Front-end na <a href="http://plus.com.vc/" target="_blank">Plus! Agência Digital</a>. 
+  Este é meu site pessoal para você ver um pouco dos meus trabalhos, espero que goste!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://sergiojr.com.br" # the base hostname & protocol for your site
+twitter_username: nunodev
+github_username:  sergiolimajr
+
+# Build settings
+markdown: kramdown
+
+# Block Titles options
+blockTitle1: Portfólio
+blockTitle2: Últimos Artigos
+blockTitle3: Sobre mim
+
+# Image Header
+image_header1: 'img/image-header1.jpg'
+image_header2: 'img/image-header2.jpg'
+image_header3: 'img/image-header3.jpg'
+
+# Attr Images header
+size_default_width_img: '1600'
+size_default_height_img: '1067'
+
+# Skills percents
+
+html: 95%
+css: 75%
+javascript: 60%
+outros: 55%
