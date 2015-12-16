@@ -140,6 +140,10 @@ a.btn-primary {
       @include media-query($on-laptop) {
         font-size: 2.3em;
       }
+
+      @include media-query($on-button) { 
+        font-size: 1.7em;
+      }
     }    
   }
 
@@ -164,8 +168,12 @@ a.btn-primary {
       line-height: 80px;
       
       @include media-query($on-button) {
-        display: block;
+        width: 100%;
         line-height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right:15px;
 
         & + a {
           margin-top: 10px;
@@ -187,9 +195,10 @@ a.btn-primary {
   background: rgba($text-color, .5);
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 999;
   width: 100%;
   min-height: 70px;
+  display: none;
   
   .site-title {
     float: left;
