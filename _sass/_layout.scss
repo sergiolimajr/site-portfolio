@@ -143,6 +143,7 @@ a.btn-primary {
 
       @include media-query($on-button) { 
         font-size: 1.7em;
+        padding: 0;
       }
     }    
   }
