@@ -13,7 +13,7 @@ content-header: Seja bem vindo. Veja alguns dos meus trabalhos ou Leia sobre mim
 email: devsergiojr@gmail.com
 description: 
   Olá! Meu nome é Sérgio Júnior, tenho 22 anos. 
-  Atualmente trabalho como desenvolvedor Front-end na <a href="http://plus.com.vc/" target="_blank">Plus! Agência Digital</a>. 
+  Atualmente trabalho como desenvolvedor Front-end na <a href="http://plusagenciadigital.com.br/" target="_blank">Plus! Agência Digital</a>. 
   Este é meu site pessoal para você ver um pouco do meu trabalho, espero que goste!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sergiojr.com.br" # the base hostname & protocol for your site
