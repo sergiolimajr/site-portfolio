@@ -80,7 +80,6 @@ a.btn-primary {
     }
 
     img {
-      max-width: 1600px;
       width: 100%;
       max-height: 673px;
       min-height: 100%;
@@ -89,15 +88,12 @@ a.btn-primary {
   }
     
   .content-header {
-    width: 61.49%;
-    left: 50%;
+    width: 1100px;
     bottom: 50%;
+    left: 50%;
     position: absolute;
     text-align: center;
-    display: block;
     z-index: 99;
-    background: rgba($background-color, .4);
-    border-radius: 4px;
     
     -webkit-transform: translate(-50%, 50%);
     -moz-transform: translate(-50%, 50%);
@@ -105,14 +101,36 @@ a.btn-primary {
     transform: translate(-50%, 50%);
 
     @include media-query($content-width) {
-      bottom: 60%;
+      width: 970px;
+    }
+
+    @include media-query($content-medium) {
+      width: 670px;
+    }
+
+    @include media-query($contents-minor) {
+      width: 470px;
+    }
+
+    @include media-query($on-palm) {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     h1.title {
-      text-shadow: 1px 1px 5px #444;
+      background: rgba($background-color, .4);
+      border-radius: 4px;
       color: $background-color;
       font-size: 5.0em;
+      float: none;
       letter-spacing: 4px;
+      line-height: 65px;
+      text-align: center;
+      text-shadow: 1px 1px 5px #444;
+      z-index: 0;
 
       @include media-query($content-width) {
         font-size: 3.5em;
@@ -128,7 +146,7 @@ a.btn-primary {
     width: 100%;
     height: 80px;
     bottom: 15%;
-    position: absolute;
+    position: relative;
     text-align: center;
     z-index: 99;
 
@@ -136,9 +154,22 @@ a.btn-primary {
       bottom: 20%;
     }
 
+    @include media-query($on-button) {
+      text-align: center;
+    }
+
     a {
       text-transform: uppercase;
       line-height: 80px;
+      
+      @include media-query($on-button) {
+        display: block;
+        line-height: 30px;
+
+        & + a {
+          margin-top: 10px;
+        }
+      }
       
       &:hover {
         background: #EEE;
@@ -147,62 +178,6 @@ a.btn-primary {
       & + a {
         margin-left: 3.57%;
       }
-    }
-  }
-
-  .container-btnScrol {
-    width: 100%;
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    z-index: 99;
-
-    @include media-query($content-width) {
-      bottom: 40px;
-    }
-
-
-    a.scroll-button {
-      width: 64px;
-      height: 64px;
-      background: url('../img/arrowDown.png') no-repeat;
-      border-radius: 100%;
-      display: block;
-      left: 50%;
-      outline: none;
-      position: relative;
-      text-transform: uppercase;
-      z-index: 1;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      
-      -webkit-animation: moveArrow linear 1s infinite alternate;
-      -moz-animation: moveArrow linear 1s infinite alternate;
-      -ms-animation: moveArrow linear 1s infinite alternate;
-      animation: moveArrow linear 1s infinite alternate;
-
-    }
-    
-    @-webkit-keyframes moveArrow {
-      0%   { position: relative; margin-top: 10px; }
-      100% { position: relative; margin-bottom: 10px; }
-    }
-
-    @-moz-keyframes moveArrow {
-      0%   { position: relative; top: 10px; }
-      100% { position: relative; bottom: 10px; }
-    }
-
-    @-ms-keyframes moveArrow {
-      0%   { position: relative; top: 10px; }
-      100% { position: relative; bottom: 10px; }
-    }
-
-    @keyframes moveArrow {
-      0%   { position: relative; margin-top: 10px; }
-      100% { position: relative; margin-bottom: 10px; }
     }
   }
 }
