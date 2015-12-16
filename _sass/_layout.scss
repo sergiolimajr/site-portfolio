@@ -551,6 +551,11 @@ a.btn-primary {
   text-align: center;
   @extend %clearfix;
 
+  @include media-query($on-footer) {
+    font-size: .8em;
+    margin-left: 50px;
+  }
+
   .fa-envelope {
     margin-bottom: 10px;
     font-size: 1.6em;
@@ -560,7 +565,6 @@ a.btn-primary {
   .footer-col-2 {
     position: relative;
     top: 50%;
-    float: left;
     margin-top: 54.5px;
 
     .contact-list {
