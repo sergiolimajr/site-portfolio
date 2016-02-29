@@ -17,7 +17,7 @@ description:
   Este é meu site pessoal para você ver um pouco do meu trabalho, espero que goste!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sergiojr.com.br" # the base hostname & protocol for your site
-twitter_username: nunodev
+twitter_username: infgamejr
 github_username:  sergiolimajr
 
 # Build settings
